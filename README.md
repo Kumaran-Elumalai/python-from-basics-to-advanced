@@ -58,7 +58,7 @@ Frequently asked **Python interview questions** with clear explanations.
 
 ---
 
-## 🔧 Technologies & Tools
+##  Technologies & Tools
 
 - **Python 3.x** (core for AI/ML & data projects)  
 - **Jupyter Notebook**  
