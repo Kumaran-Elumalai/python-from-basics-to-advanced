@@ -6,7 +6,6 @@ An **AI/ML Engineer** and a **data enthusiast** passionate about solving real-wo
 
 
 ## 📚 About This Repository
-
 This repository, [python-from-basics-to-advanced](https://github.com/Kumaran-Elumalai/python-from-basics-to-advanced), is my **Python learning journal**.  
 
 While my main work is in **AI/ML**, Python is the **backbone of everything I build**.  
