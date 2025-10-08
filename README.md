@@ -1,6 +1,5 @@
 # 🐍 Python: From Basics to Advanced
 
-
 👋 Hi, I'm **Kumaran Elumalai**  
 An **AI/ML Engineer** and a **data enthusiast** passionate about solving real-world problems using data and machine learning. I enjoy building projects, experimenting with AI models, and continuously learning new technologies.
 
