@@ -61,7 +61,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 ---
 
 ## 📅 Day 5 – Functional Programming & Decorators
-
+### Topics Covered
 - Functional tools:
   - `map()`, `filter()`, `reduce()`, `accumulate()`
 - First-class and higher-order functions
@@ -83,7 +83,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
  ---
 
 ## 📅 Day 6 – Strings & Text Processing
-### Key Takeaways
+### Topics Covered
 - Strings as immutable text data
 - Indexing from both left and right
 - Slicing for substrings and reversing text
@@ -104,7 +104,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 ---
 
 ## 📅 Day 7 – Lists & Tuples
-### Key Takeaways
+### Topics Covered
 - Lists:
   - Mutable and dynamic
   - Best for changing data
@@ -117,9 +117,9 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 - Lists offer rich methods; tuples are intentionally minimal
 - Tuples often perform better due to immutability
 
-
+---
 ## 📅 Day 8 – Sets & Dictionaries
-### 🔹 Sets
+### Topics Covered
 - Unordered collection of unique elements
 - Set creation, mutability, and constraints
 - Core methods:
@@ -160,4 +160,3 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
   - Lookup tables
   - User data tracking
 
----
