@@ -17,3 +17,18 @@ Each day builds logically on the previous one.
 - Keywords are “do not touch” signs 🚧  
 - Variables are name tags 🏷️  
 - Objects are memory treasures 🏆  
+
+## 📅 Day 2 – Data Types, Operators & Conditionals
+### Key Takeaways
+- Data Types:
+  - Numeric, Strings, Boolean
+  - Introduction to list, tuple, set, dictionary
+- Operators:
+  - Arithmetic, Comparison, Logical
+  - Bitwise, Assignment
+  - Identity, Membership, Ternary
+- Conditional Statements:
+  - `if`, `if-else`, `elif`
+  - Nested conditions
+  - Shorthand (ternary)
+  - `match-case`
