@@ -109,3 +109,23 @@ Each day builds logically on the previous one.
   - Mixed data types
 - Lists offer rich methods; tuples are intentionally minimal
 - Tuples often perform better due to immutability
+
+
+## 📅 Day 8 – Sets & Dictionaries
+### 🔹 Sets
+- Unordered collection of unique elements
+- Set creation, mutability, and constraints
+- Core methods:
+  - `add`, `update`, `remove`, `discard`, `pop`, `clear`
+- Set operations:
+  - Union, Intersection, Difference, Symmetric Difference
+- Set relations:
+  - Subset, Superset, Disjoint
+- Set comprehensions for efficient transformations
+- `frozenset` for immutability
+- Hashing fundamentals and O(1) average lookup time
+- Real-world use cases:
+  - Duplicate removal
+  - Fast membership checks
+  - Log analysis
+  - Tag filtering
