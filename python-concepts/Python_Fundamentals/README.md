@@ -38,3 +38,15 @@ Each day builds logically on the previous one.
   - `break`, `continue`, `pass`
 - `else` with loops (executes only if no `break` occurs)
 
+---
+## 📅 Day 4 – Functions & Recursion
+### Key Takeaways
+- Defining and calling functions
+- Parameters, arguments, and return values
+- Pass by value vs pass by reference
+- Nested functions for logical organization
+- Lambda (anonymous) functions
+- Recursion fundamentals:
+  - Base case importance
+  - Tail vs non-tail recursion
+- Recursion vs iteration and when to prefer each
