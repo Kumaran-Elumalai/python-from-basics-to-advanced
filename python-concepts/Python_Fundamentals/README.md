@@ -129,3 +129,28 @@ Each day builds logically on the previous one.
   - Fast membership checks
   - Log analysis
   - Tag filtering
+
+### 🔹 Dictionaries
+- Key–value data structure fundamentals
+- Creation, access, modification, and deletion
+- Safe access patterns:
+  - `get()`
+  - Key existence checks
+  - `setdefault()`
+- Core methods:
+  - `keys`, `values`, `items`, `copy`, `fromkeys`
+- Looping patterns for data processing
+- Dictionary comprehensions
+- Nested dictionaries (JSON-like structures, API responses)
+- Dictionary memory model and hashing
+- Advanced concepts:
+  - Tuple keys
+  - Dictionary merging (`|`)
+  - `OrderedDict`, `defaultdict`
+- Real-world applications:
+  - Frequency counting
+  - Configuration management
+  - Lookup tables
+  - User data tracking
+
+---
