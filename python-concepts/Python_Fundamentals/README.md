@@ -1,7 +1,14 @@
-# 📘 Python Fundamentals : Day-wise Learning Summary
+# 📘 Python Fundamentals – Day-wise Learning Summary
 
-This module covers Python from **absolute basics to strong core foundations**, designed for **learning, practice, and interview preparation**.  
-Each day builds logically on the previous one.
+Welcome to the **Python Fundamentals** module 👋  
+This section is designed to take you from **absolute Python basics to strong core foundations**, using a clear, structured, day-wise approach.
+
+The content is carefully organized to help you:
+- Build concepts step by step
+- Practice Python in a hands-on way
+- Prepare confidently for interviews and technical discussions
+
+Each day focuses on a specific set of concepts, ensuring steady progress without overwhelm.
 ---
 
 ## 📅 Day 1 – Python Basics & Foundations
