@@ -13,11 +13,6 @@ Each day builds logically on the previous one.
 - Keywords: reserved words with special meaning
 - Clear distinction between variables, keywords, and identifiers
 
-### Concept Insight
-- Keywords are “do not touch” signs 🚧  
-- Variables are name tags 🏷️  
-- Objects are memory treasures 🏆  
-
 ## 📅 Day 2 – Data Types, Operators & Conditionals
 ### Key Takeaways
 - Data Types:
@@ -32,10 +27,5 @@ Each day builds logically on the previous one.
   - Nested conditions
   - Shorthand (ternary)
   - `match-case`
-
-### Why It Matters
-- Data types define what data you store
-- Operators define what actions you perform
-- Conditionals give programs decision-making ability
 
 ---
