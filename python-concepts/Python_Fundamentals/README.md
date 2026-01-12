@@ -50,3 +50,46 @@ Each day builds logically on the previous one.
   - Base case importance
   - Tail vs non-tail recursion
 - Recursion vs iteration and when to prefer each
+
+---
+
+## 📅 Day 5 – Functional Programming & Decorators
+### Key Takeaways
+- Functional tools:
+  - `map()`, `filter()`, `reduce()`, `accumulate()`
+- First-class and higher-order functions
+- Decorators:
+  - Internal working of decorators
+  - Extending behavior without modifying original functions
+- Types of decorators:
+  - Function, Method, Class
+- Built-in decorators:
+  - `@staticmethod`, `@classmethod`, `@property`
+- Chaining multiple decorators
+- Real-world use cases:
+  - Logging
+  - Authentication
+  - Caching
+  - Rate limiting
+  - Retry logic
+
+ ---
+
+## 📅 Day 6 – Strings & Text Processing
+### Key Takeaways
+- Strings as immutable text data
+- Indexing from both left and right
+- Slicing for substrings and reversing text
+- Core string operations:
+  - Concatenation, repetition, membership, iteration
+- Common string methods:
+  - Cleaning, searching, splitting, joining, transforming
+- String formatting techniques:
+  - f-strings
+  - `format()`
+  - `%` formatting
+- Escape sequences for special characters
+- Practical exercises:
+  - Reversing strings
+  - Palindrome checks
+  - Character validation
