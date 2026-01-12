@@ -93,3 +93,19 @@ Each day builds logically on the previous one.
   - Reversing strings
   - Palindrome checks
   - Character validation
+
+---
+
+## 📅 Day 7 – Lists & Tuples
+### Key Takeaways
+- Lists:
+  - Mutable and dynamic
+  - Best for changing data
+- Tuples:
+  - Immutable and lightweight
+  - Best for fixed or structured data
+- Shared capabilities:
+  - Indexing, slicing, iteration
+  - Mixed data types
+- Lists offer rich methods; tuples are intentionally minimal
+- Tuples often perform better due to immutability
