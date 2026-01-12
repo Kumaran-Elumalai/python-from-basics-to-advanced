@@ -29,3 +29,12 @@ Each day builds logically on the previous one.
   - `match-case`
 
 ---
+## 📅 Day 3 – Loops & Control Flow
+### Key Takeaways
+- `for` loop for iterating over sequences
+- `while` loop for condition-based repetition
+- Nested loops for multi-level iterations
+- Loop control statements:
+  - `break`, `continue`, `pass`
+- `else` with loops (executes only if no `break` occurs)
+
