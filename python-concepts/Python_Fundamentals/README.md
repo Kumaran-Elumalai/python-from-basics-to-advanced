@@ -32,3 +32,10 @@ Each day builds logically on the previous one.
   - Nested conditions
   - Shorthand (ternary)
   - `match-case`
+
+### Why It Matters
+- Data types define what data you store
+- Operators define what actions you perform
+- Conditionals give programs decision-making ability
+
+---
