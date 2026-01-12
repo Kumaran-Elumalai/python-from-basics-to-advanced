@@ -12,7 +12,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 ---
 
 ## 📅 Day 1 – Python Basics & Foundations
-### Key Takeaways
+### Topics Covered
 - Python basics: simple, readable, cross-platform language
 - Indentation defines code blocks (no braces)
 - Input & Output: `input()`, `print()`, multiple inputs, type casting
@@ -21,7 +21,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 - Clear distinction between variables, keywords, and identifiers
 
 ## 📅 Day 2 – Data Types, Operators & Conditionals
-### Key Takeaways
+### Topics Covered
 - Data Types:
   - Numeric, Strings, Boolean
   - Introduction to list, tuple, set, dictionary
@@ -37,7 +37,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 
 ---
 ## 📅 Day 3 – Loops & Control Flow
-### Key Takeaways
+### Topics Covered
 - `for` loop for iterating over sequences
 - `while` loop for condition-based repetition
 - Nested loops for multi-level iterations
@@ -47,7 +47,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 
 ---
 ## 📅 Day 4 – Functions & Recursion
-### Key Takeaways
+### Topics Covered
 - Defining and calling functions
 - Parameters, arguments, and return values
 - Pass by value vs pass by reference
@@ -61,7 +61,7 @@ Each day focuses on a specific set of concepts, ensuring steady progress without
 ---
 
 ## 📅 Day 5 – Functional Programming & Decorators
-### Key Takeaways
+
 - Functional tools:
   - `map()`, `filter()`, `reduce()`, `accumulate()`
 - First-class and higher-order functions
