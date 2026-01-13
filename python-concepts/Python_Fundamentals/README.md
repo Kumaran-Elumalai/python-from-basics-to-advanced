@@ -1,4 +1,4 @@
-# 📘 Python Fundamentals – Day-wise Learning Summary
+# 📘 Python Fundamentals : Day-wise Learning Summary
 
 Welcome to the **Python Fundamentals** module 👋  
 This section is designed to take you from **absolute Python basics to strong core foundations**, using a clear, structured, day-wise approach.
