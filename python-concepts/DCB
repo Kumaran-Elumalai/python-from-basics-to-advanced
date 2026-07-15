@@ -1,0 +1,363 @@
+Good idea. Since you'll be using a **new chat without login**, the prompt should be **concise but complete**. We should remove repetitive explanations while keeping all the important design decisions.
+
+Copy and paste the following prompt tomorrow:
+
+# Digital Cookbook Project
+
+I want to build a production-ready Streamlit application called **Digital Cookbook** for the Automotive Manufacturing Industry (Bosch).
+
+## Objective
+
+The application identifies failed components on a product's schematic diagram using Manufacturing Work System (MWS) failure data from Azure Databricks.
+
+The application must be scalable so that adding a new product only requires uploading Master Data. No code changes should be needed.
+
+---
+
+# Technology Stack
+
+* Frontend: Streamlit
+* Backend: Python
+* Database: PostgreSQL
+* ORM: SQLAlchemy
+* Production Data: Azure Databricks (MWS)
+* File Storage: Local folders (PDF/CAD)
+
+---
+
+# Application Pages
+
+## 1. Application
+
+Operator enters a DMC.
+
+The application should:
+
+* Get Part Number from Databricks.
+* Load Master Data from PostgreSQL.
+* Retrieve Product, Family, Host IDs, Common Failures, Module Mapping and PDF.
+* Query Databricks again using only the uploaded Host IDs.
+* Remove pseudo failures.
+* Map Modules to Components.
+* Highlight Components on the schematic PDF.
+* Display and download the highlighted PDF.
+
+## 2. Master Data
+
+Admin page for complete CRUD.
+
+Should support:
+
+* Product
+* Family
+* Part Number
+
+Uploads:
+
+* Host IDs
+* Common Failure Excel
+* Module Mapping Excel
+* PDF
+* CAD
+
+---
+
+# Master Data Hierarchy
+
+Product
+
+* Host IDs
+* Common Failures
+* Family
+
+  * Part Number
+
+    * Module Mapping
+    * PDF
+    * CAD
+
+Host IDs belong to Product.
+
+Common Failures belong to Product.
+
+Module Mapping belongs to Part Number.
+
+PDF belongs to Part Number.
+
+CAD belongs to Part Number.
+
+Family is only a grouping.
+
+---
+
+# Example
+
+Product
+
+iTraMS
+
+Family
+
+iTraMS Gen2A
+
+Part Numbers
+
+7620002332
+
+AD00A10142
+
+Allowed Host IDs
+
+CCS7999
+
+CCS7998
+
+CCS7995
+
+Common Failure Excel
+
+Columns:
+
+* SNo
+* Modname
+* Remarks
+
+Module Mapping Excel
+
+Columns:
+
+* Modname
+* Component
+
+One module can map to multiple components.
+
+---
+
+# Azure Databricks
+
+Database
+
+bmlpdp_x_me_emea_p.x_mws_harmonization.mws_test_steps
+
+Columns
+
+* uniquepart_id (DMC)
+* product_part_id (Part Number)
+* mws_test_step_module_name
+* mws_test_result
+* host_id
+* sap_plant_id
+
+Always filter
+
+sap_plant_id='1760'
+
+---
+
+# Runtime Flow
+
+1. User enters DMC.
+
+2. Query Databricks.
+
+SELECT DISTINCT product_part_id
+
+using DMC.
+
+3. PostgreSQL returns
+
+* Product
+* Family
+* Host IDs
+* Common Failures
+* Module Mapping
+* PDF Path
+* CAD Path
+
+4. Use uploaded Host IDs to build the Databricks query.
+
+Uploaded Host IDs may be
+
+CCS7999
+
+while MWS contains
+
+NH1CCS7999
+
+Use pattern matching (or host normalization) so they match.
+
+5. Query Databricks using
+
+* DMC
+* mws_test_result=1
+* sap_plant_id='1760'
+* Allowed Host IDs
+
+6. Retrieve Failed Modules.
+
+7. Remove modules present in Common Failures.
+
+8. Map remaining Modules to Components.
+
+9. Load schematic PDF.
+
+10. Highlight Components.
+
+11. Display and allow download.
+
+---
+
+# PostgreSQL Tables
+
+Product
+
+* id
+* product_name
+* description
+
+Family
+
+* id
+* product_id
+* family_name
+
+PartNumber
+
+* id
+* product_id
+* family_id
+* part_number
+* pdf_path
+* cad_path
+
+HostStation
+
+* id
+* product_id
+* host_id
+
+CommonFailure
+
+* id
+* product_id
+* modname
+* remarks
+
+ModuleMapping
+
+* id
+* part_number_id
+* modname
+* component
+
+---
+
+# Project Structure
+
+digital_cookbook/
+
+app.py
+
+pages/
+
+* 1_Application.py
+* 2_Master_Data.py
+
+database.py
+crud.py
+databricks.py
+pdf_utils.py
+excel_utils.py
+utils.py
+config.py
+
+uploads/
+
+* pdf/
+* cad/
+* temp/
+
+assets/
+
+* logo.png
+
+requirements.txt
+
+.env
+
+README.md
+
+---
+
+# Responsibilities
+
+app.py
+
+Only home page and navigation.
+
+database.py
+
+SQLAlchemy Engine, Session, Base and all Models.
+
+crud.py
+
+All PostgreSQL CRUD operations.
+
+databricks.py
+
+All Azure Databricks queries.
+
+pdf_utils.py
+
+PDF loading and highlighting.
+
+excel_utils.py
+
+Excel/CSV parsing and validation.
+
+utils.py
+
+Common helper functions.
+
+config.py
+
+Environment variables.
+
+---
+
+# Coding Requirements
+
+* Use SQLAlchemy ORM.
+* Use raw SQL only for Databricks.
+* Add comments and docstrings.
+* Use type hints.
+* Handle exceptions properly.
+* Validate uploaded Excel files.
+* Use transactions for writes.
+* Keep the project simple (around 8–10 Python files).
+* Avoid over-engineering.
+
+---
+
+# Development Plan
+
+Build the application one complete file at a time.
+
+Start with:
+
+1. requirements.txt
+2. .env
+3. config.py
+4. database.py
+5. crud.py
+6. app.py
+7. Master Data Page
+8. Databricks Integration
+9. Application Page
+10. PDF Highlighting
+
+Do not generate partial code. Generate complete production-ready code for each file with detailed explanations before moving to the next file.
+
+This version is much cleaner and avoids repetition while preserving all the important requirements.
+
+One small suggestion for tomorrow: in the new chat, start with **"Act as a Senior Python Architect with experience in Streamlit, SQLAlchemy, PostgreSQL, Azure Databricks, and Automotive Manufacturing Systems."** That sets the context immediately and usually leads to more structured, production-oriented code.
