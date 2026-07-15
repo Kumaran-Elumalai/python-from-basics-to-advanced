@@ -358,6 +358,8 @@ Start with:
 
 https://chatgpt.com/c/6a57b60d-0f04-83ee-babb-7665344c85e7
 
+https://chatgpt.com/share/6a57d411-befc-83ee-9de7-65a95d339d6d
+
 Do not generate partial code. Generate complete production-ready code for each file with detailed explanations before moving to the next file.
 
 This version is much cleaner and avoids repetition while preserving all the important requirements.
