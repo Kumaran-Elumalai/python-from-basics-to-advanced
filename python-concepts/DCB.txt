@@ -356,6 +356,8 @@ Start with:
 9. Application Page
 10. PDF Highlighting
 
+https://chatgpt.com/c/6a57b60d-0f04-83ee-babb-7665344c85e7
+
 Do not generate partial code. Generate complete production-ready code for each file with detailed explanations before moving to the next file.
 
 This version is much cleaner and avoids repetition while preserving all the important requirements.
