@@ -1,11 +1,5 @@
 
 
-Copy and paste the following prompt tomorrow:
-
-# Digital Cookbook Project
-
-I want to build a production-ready Streamlit application called **Digital Cookbook** for the Automotive Manufacturing Industry (Bosch).
-
 ## Objective
 
 The application identifies failed components on a product's schematic diagram using Manufacturing Work System (MWS) failure data from Azure Databricks.
