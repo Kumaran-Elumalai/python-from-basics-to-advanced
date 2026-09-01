@@ -51,7 +51,6 @@ Frequently asked **Python interview questions** with clear explanations.
 - Basic concepts (e.g., list vs tuple)  
 - Intermediate (e.g., shallow vs deep copy)  
 - Advanced (e.g., GIL, memory management)  
-
 ---
 
 ##  Technologies & Tools
