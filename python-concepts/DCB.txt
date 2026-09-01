@@ -1,11 +1,5 @@
 
 
-## Objective
-
-The application identifies failed components on a product's schematic diagram using Manufacturing Work System (MWS) failure data from Azure Databricks.
-
-The application must be scalable so that adding a new product only requires uploading Master Data. No code changes should be needed.
-
 ---
 
 # Technology Stack
