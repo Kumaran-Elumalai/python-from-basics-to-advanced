@@ -1,4 +1,4 @@
-Good idea. Since you'll be using a **new chat without login**, the prompt should be **concise but complete**. We should remove repetitive explanations while keeping all the important design decisions.
+
 
 Copy and paste the following prompt tomorrow:
 
