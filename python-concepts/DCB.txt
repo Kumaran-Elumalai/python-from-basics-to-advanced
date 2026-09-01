@@ -1,15 +1,6 @@
 
 
----
 
-# Technology Stack
-
-* Frontend: Streamlit
-* Backend: Python
-* Database: PostgreSQL
-* ORM: SQLAlchemy
-* Production Data: Azure Databricks (MWS)
-* File Storage: Local folders (PDF/CAD)
 
 ---
 
